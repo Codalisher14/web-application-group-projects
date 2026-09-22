@@ -66,3 +66,42 @@ async function logout() {
 
 // Make logout available to HTML onclick
 window.logout = logout;
+
+const dashboardCardContent = {
+    users: {
+        title: "Users",
+        description: "Manage the 25 users registered in your web application."
+    },
+    reports: {
+        title: "Reports",
+        description: "Review the 12 reports available for your web application."
+    },
+    activities: {
+        title: "Activities",
+        description: "Track the latest activity across your web application."
+    }
+};
+
+function selectDashboardCard(card) {
+    const content = dashboardCardContent[card.dataset.dashboardCard];
+    if (!content) {
+        return;
+    }
+
+    document.querySelectorAll("[data-dashboard-card]").forEach((dashboardCard) => {
+        dashboardCard.classList.toggle("selected", dashboardCard === card);
+    });
+
+    document.querySelector(".welcome-panel h2").textContent = content.title;
+    document.querySelector(".welcome-panel p").textContent = content.description;
+}
+
+document.querySelectorAll("[data-dashboard-card]").forEach((card) => {
+    card.addEventListener("click", () => selectDashboardCard(card));
+    card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            selectDashboardCard(card);
+        }
+    });
+});

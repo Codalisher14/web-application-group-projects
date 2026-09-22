@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users</title>
+  <link rel="stylesheet" href="main_dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="dashboard-logo">
+      <i class="fa-solid fa-laptop-code"></i>
+      <span>Web Application</span>
+    </div>
+    <nav>
+      <a href="main_dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+      <a href="users.html" class="active"><i class="fa-solid fa-users"></i> Users</a>
+      <a href="reports.html"><i class="fa-solid fa-chart-line"></i> Reports</a>
+      <a href="profile_dashboard.html"><i class="fa-solid fa-user"></i> Profile</a>
+      <a href="activities.html"><i class="fa-solid fa-clock-rotate-left"></i> Activities</a>
+    </nav>
+    <button class="logout-button" onclick="logout()">
+      <i class="fa-solid fa-right-from-bracket"></i> Logout
+    </button>
+  </aside>
+
+  <main class="main-content">
+    <header class="dashboard-header">
+      <div>
+        <h1>Users</h1>
+        <p>Manage the users registered in your web application.</p>
+      </div>
+    </header>
+    <section class="welcome-panel">
+      <h2>25 Registered Users</h2>
+      <p>This page is ready for your user list and account management tools.</p>
+    </section>
+  </main>
+  <script type="module" src="main_dashboard.js"></script>
+</body>
+</html>
