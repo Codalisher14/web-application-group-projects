@@ -1,1 +1,1 @@
-Baseline line for Lab 7 merge conflict demo.
+GitHub UI conflict demo - Version X edit.
