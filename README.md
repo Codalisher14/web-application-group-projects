@@ -8,5 +8,6 @@
 # Lagura, Wesley
 # Nacional, Jomari
 # Orit, Jan
+# Politud, Carl Lawrence
 # San Jose, Kurt Benedict
 # Technology Used: Visual Studio Code and Google Firebase
