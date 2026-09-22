@@ -121,10 +121,21 @@ nav a.active {
   align-items: center;
   gap: 16px;
   transition: box-shadow .15s ease, transform .15s ease;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 }
 .card:hover {
   box-shadow: 0 4px 12px rgba(16,24,40,.08);
   transform: translateY(-1px);
+}
+.card:focus-visible,
+.card.selected {
+  outline: 3px solid rgba(77, 141, 255, .35);
+  outline-offset: 2px;
+}
+.card.selected {
+  border-color: #4d8dff;
 }
 .card-icon {
   width: 48px;
