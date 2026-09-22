@@ -15,8 +15,14 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
  
     background: #f4f6f8; 
+    color: #1f2937;
  
 } 
+
+button,
+input {
+    font: inherit;
+}
  
  
 /* ========================================= 
@@ -158,6 +164,13 @@ nav a.active {
     background: #b02a37; 
  
 } 
+
+.logout-button:focus-visible,
+nav a:focus-visible,
+.save-button:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+    outline-offset: 2px;
+}
  
  
 /* ========================================= 
@@ -303,7 +316,7 @@ nav a.active {
  
     width: 100%; 
  
-    padding: 11px; 
+    padding: 11px 12px; 
  
     border: 1px solid #cccccc; 
  
@@ -312,6 +325,7 @@ nav a.active {
     font-size: 14px; 
  
     background: white; 
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
  
 } 
  
@@ -394,13 +408,14 @@ input.error-border {
  
     color: white; 
  
-    border: none; 
+    border: 1px solid transparent; 
  
     border-radius: 6px; 
  
     cursor: pointer; 
  
     font-size: 15px; 
+    font-weight: 600; 
  
     transition: 0.3s; 
  
@@ -429,6 +444,7 @@ input.error-border {
     font-size: 14px; 
  
     font-weight: bold; 
+    min-height: 18px;
  
 } 
  
