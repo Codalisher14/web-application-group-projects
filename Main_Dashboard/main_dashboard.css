@@ -6,9 +6,7 @@ body {
  font-family: Arial, sans-serif;
  background: #f4f6f8;
 }
-/* =========================================
- SIDEBAR
- ========================================= */
+
 .sidebar {
  position: fixed;
  left: 0;
@@ -21,7 +19,7 @@ body {
  display: flex;
  flex-direction: column;
 }
-/* Logo */
+
 .dashboard-logo {
  display: flex;
  align-items: center;
@@ -33,7 +31,7 @@ body {
 .dashboard-logo i {
  font-size: 25px;
 }
-/* Navigation */
+
 nav {
  display: flex;
  flex-direction: column;
@@ -56,19 +54,17 @@ nav a.active {
 .logout-button {
  margin-top: auto;
  padding: 12px;
- background: #dc3545;
- color: white;
+ background: #0fb834;
+ color: rgb(187, 202, 190);
  border: none;
  border-radius: 6px;
  cursor: pointer;
  font-size: 15px;
 }
 .logout-button:hover {
- background: #b02a37;
+ background: #a1e20a;
 }
-/* =========================================
- MAIN CONTENT
- ========================================= */
+
 .main-content {
  margin-left: 240px;
  padding: 30px;
@@ -88,9 +84,7 @@ nav a.active {
  margin: 0;
  color: #777;
 }
-/* =========================================
- CARDS
- ========================================= */
+
 .cards {
  display: grid;
  grid-template-columns:
@@ -111,7 +105,7 @@ nav a.active {
  height: 50px;
  border-radius: 50%;
  background: #e8f1ff;
- color: #007BFF;
+ color: #45b841;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -127,12 +121,10 @@ nav a.active {
  font-size: 24px;
  font-weight: bold;
 }
-/* =========================================
- WELCOME PANEL
- ========================================= */
+
 .welcome-panel {
  margin-top: 25px;
- background: white;
+ background: rgb(132, 212, 107);
  padding: 30px;
  border-radius: 10px;
  box-shadow: 0 2px 8px rgba(0,0,0,.08);
@@ -144,9 +136,7 @@ nav a.active {
  color: #666;
  line-height: 1.6;
 }
-/* =========================================
- RESPONSIVE
- ========================================= */
+
 @media (max-width: 768px) {
  .sidebar {
  width: 70px;
