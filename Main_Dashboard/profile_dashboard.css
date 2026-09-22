@@ -14,11 +14,7 @@ body {
  
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
  
-<<<<<<< HEAD
     background: #f0f2f5;
-=======
-    background: #f4f6f8; 
->>>>>>> 72ffc98d1a58fdc62d6e788f26e7653df0cb9f7a
     color: #1f2937;
  
 } 
@@ -333,11 +329,7 @@ nav a:focus-visible,
  
     width: 100%; 
  
-<<<<<<< HEAD
     padding: 11px 12px;
-=======
-    padding: 11px 12px; 
->>>>>>> 72ffc98d1a58fdc62d6e788f26e7653df0cb9f7a
  
     border: 1px solid #d0d5dd;
  
@@ -435,13 +427,8 @@ input.error-border {
  
     cursor: pointer; 
  
-<<<<<<< HEAD
     font-size: 14.5px;
     font-weight: 500;
-=======
-    font-size: 15px; 
-    font-weight: 600; 
->>>>>>> 72ffc98d1a58fdc62d6e788f26e7653df0cb9f7a
  
     transition: background .15s ease;
  
