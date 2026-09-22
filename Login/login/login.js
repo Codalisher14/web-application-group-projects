@@ -7,42 +7,29 @@ const loginForm = document.getElementById("loginForm");
 
 loginForm.addEventListener("submit", async function(event) {
    event.preventDefault();
-   // ==========================================
-   // GET VALUES
-   // ==========================================
+
    const email =
    document.getElementById("loginEmail").value.trim();
    const password =
    document.getElementById("loginPassword").value;
-   // ==========================================
-   // CLEAR PREVIOUS MESSAGES
-   // ==========================================
    document.getElementById("loginEmailError").textContent = "";
    document.getElementById("loginPasswordError").textContent = "";
    document.getElementById("loginMessage").textContent = "";
    document.getElementById("loginMessage").className = "";
    
    let valid = true;
-   // ==========================================// EMAIL VALIDATION
-   // ==========================================
    
    if (email === "") {
       
       document.getElementById("loginEmailError").textContent ="Email is required.";
       valid = false;
  }
- // ==========================================
- // PASSWORD VALIDATION
- // ==========================================
  
  if (password === "") {
    document.getElementById("loginPasswordError").textContent = "Password is required.";
    valid = false;
  }
 
-  // ========================================== 
-        // FIREBASE LOGIN 
-        // ========================================== 
  
         if (valid) { 
  
@@ -96,9 +83,6 @@ loginForm.addEventListener("submit", async function(event) {
 );
 
 
-// ==========================================
-// SHOW / HIDE PASSWORD
-// ==========================================
 const toggleLoginPassword =
  document.getElementById("toggleLoginPassword");
 const loginPasswordField =

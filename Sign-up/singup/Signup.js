@@ -44,7 +44,7 @@ form.addEventListener("submit", async function(event) {
         valid = false;
     }
 
-    //Full Name Validation
+    
     if (fullname === "") {
         document.getElementById("fullnameError").textContent = "Full name is required";
 
@@ -53,7 +53,7 @@ form.addEventListener("submit", async function(event) {
         valid = false;
     }
 
-    //Email Validation
+   
     if (email === "") {
         document.getElementById("emailError").textContent = "Email is required";
 
