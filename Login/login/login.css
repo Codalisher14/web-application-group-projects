@@ -1,211 +1,216 @@
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
- font-family: Arial, sans-serif;
- min-height: 100vh;
- background: #f4f6f8;
- overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: #f4f6f8;
+  overflow-x: hidden;
 }
 
 .login-wrapper {
- display: grid;
- grid-template-columns: 1fr 1fr; /* Exact 50/50 split screen
-*/
- width: 100vw;
- height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 100vh;
 }
 
 .login-brand {
- display: flex;
- justify-content: center; /* Horizontally centers the whole
-brand-content block */
- align-items: center; /* Vertically centers it in the
-left half */
-height: 100%; /* Fills grid space completely */
- background-color: #ffffff;
- padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 20px;
 }
 .brand-content {
- display: flex;
- flex-direction: column;
- align-items: center; /* Centers all child items
-horizontally */
- text-align: center; /* Centers your h1 and p text lines
-*/
- max-width: 400px; /* Keeps the content tightly
-grouped */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
 }
-/* Scales down your gwing.png logo image */
+
+/* Logo */
 .logo img {
- width: 100%; /* Allows fluid scaling */
- max-width: 1000px; /* Change this value to make it
-smaller or bigger */
- height: auto; /* Keeps original image proportions
-without stretching */
- display: block; /* Removes extra inline baseline
-spacing */
- margin: 0 auto 25px auto;/* Centers the logo and adds a 25px
-gap right above the title */
+  width: 100%;
+  max-width: 200px; /* was 1000px — way too large for a 400px container */
+  height: auto;
+  display: block;
+  margin: 0 auto 25px auto;
 }
-/* Typography spacing for your titles */
+
+/* Typography */
 .brand-title h1 {
- font-size: 2rem;
- margin-bottom: 10px;
- color: #333333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333333;
 }
 .brand-title p {
- font-size: 1rem;
- line-height: 1.6;
- color: #666666;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666666;
 }
+
 /* =========================================
- RIGHT SIDE
- ========================================= */
+   RIGHT SIDE
+   ========================================= */
 .login-form-section {
- display: flex;
- justify-content: center;
- align-items: center;
- background: #060606;
- height: 100%; /* Ensures full vertical stretch */
- padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d0d0d; /* softened from #060606 */
+  height: 100%;
+  padding: 20px;
 }
+
 /* =========================================
- LOGIN CONTAINER
- ========================================= */
+   LOGIN CONTAINER
+   ========================================= */
 .login-container {
- width: 350px;
- background: white;
- padding: 35px;
- border-radius: 12px;
- box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 .login-container h2 {
- text-align: center;
- margin-bottom: 5px;
- font-size: 28px;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 28px;
 }
 .login-subtitle {
- text-align: center;
- color: #777;
- margin-bottom: 25px;
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
 }
+
 /* =========================================
- FORM ELEMENTS
- ========================================= */
+   FORM ELEMENTS
+   ========================================= */
 .form-group {
-     margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 label {
- display: block;
- font-weight: bold;
- margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 input {
- width: 100%;
- padding: 11px;
- box-sizing: border-box;
- border: 1px solid #ccc;
- border-radius: 5px;
- font-size: 14px;
+  width: 100%;
+  padding: 11px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
 }
 input:focus {
- outline: none;
- border-color: #007BFF;
+  outline: none;
+  border-color: #007BFF;
 }
+
 /* =========================================
- PASSWORD / EYE ICON
- ========================================= */
+   PASSWORD / EYE ICON
+   ========================================= */
 .password-container {
- position: relative;
+  position: relative;
 }
 .password-container input {
- padding-right: 45px;
+  padding-right: 45px;
 }
 .password-container i {
- position: absolute;
- right: 15px;
- top: 50%;
- transform: translateY(-50%);
- color: #777;
- cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  cursor: pointer;
   font-size: 16px;
 }
-.password-container i:hover {
- color: #007BFF;
+.password-container i:hover,
+.password-container i:focus {
+  color: #007BFF;
+  outline: none;
 }
+
 /* =========================================
- ERROR / STATUS MESSAGES
- ========================================= */
+   ERROR / STATUS MESSAGES
+   ========================================= */
 .error {
- color: #dc3545;
- font-size: 12px;
- display: block;
- margin-top: 5px;
+  color: #dc3545;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
 }
 #loginMessage {
- text-align: center;
- font-size: 14px;
- font-weight: bold;
- margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
 }
 .login-error {
- color: #dc3545;
+  color: #dc3545;
 }
+
 /* =========================================
- LOGIN BUTTON
- ========================================= */
+   LOGIN BUTTON
+   ========================================= */
 .login-button {
- width: 100%;
- padding: 12px;
- margin-top: 10px;
- background: #007BFF;
- color: white;
- border: none;
- border-radius: 6px;
- cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
   font-size: 16px;
- transition: 0.3s;
+  transition: background 0.3s, transform 0.15s;
 }
 .login-button:hover {
- background: #0056b3;
+  background: #0056b3;
 }
+.login-button:active {
+  transform: scale(0.98); /* subtle press effect */
+}
+
 /* =========================================
- SIGN UP LINK
- ========================================= */
+   SIGN UP LINK
+   ========================================= */
 .signup-link {
- text-align: center;
- margin-top: 20px;
- font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
 .signup-link a {
- color: #007BFF;
- text-decoration: none;
- font-weight: bold;
- margin-left: 5px;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
 }
 .signup-link a:hover {
- text-decoration: underline;
+  text-decoration: underline;
 }
+
 /* =========================================
- RESPONSIVE DESIGN (MOBILE STACKING)
- ========================================= */
+   RESPONSIVE DESIGN (MOBILE STACKING)
+   ========================================= */
 @media (max-width: 768px) {
- .login-wrapper {
- grid-template-columns: 1fr; /* Drops down to a single
-vertical track */
- height: auto;
- }
- .login-brand {
- min-height: 280px;
- padding: 40px 20px;
- }
- .login-form-section {
- padding: 40px 0;
- }
- .brand-title h1 {
- font-size: 25px;
- }
+  .login-wrapper {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .login-brand {
+    min-height: 280px;
+    padding: 40px 20px;
+  }
+  .login-form-section {
+    background: #ffffff; /* matches brand section on mobile, avoids jarring black block */
+    padding: 40px 20px;
+  }
+  .brand-title h1 {
+    font-size: 25px;
+  }
 }
