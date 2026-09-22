@@ -1,6 +1,3 @@
-/* =========================================
- GENERAL PAGE
- ========================================= */
 * {
  margin: 0;
  padding: 0;
@@ -12,9 +9,7 @@ body {
  background: #f4f6f8;
  overflow-x: hidden;
 }
-/* =========================================
- SPLIT LOGIN WRAPPER
- ========================================= */
+
 .login-wrapper {
  display: grid;
  grid-template-columns: 1fr 1fr; /* Exact 50/50 split screen
@@ -22,9 +17,7 @@ body {
  width: 100vw;
  height: 100vh;
 }
-/* =========================================
- LEFT SIDE - BRANDING
- ========================================= */
+
 .login-brand {
  display: flex;
  justify-content: center; /* Horizontally centers the whole
